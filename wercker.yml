@@ -22,7 +22,7 @@ deploy:
     - add-ssh-key:
         keyname: e2elocalserver
     - add-to-known_hosts:
-        hostname: 198.211.99.187
+        hostname: 101.53.139.9
     - script:
         name: "deploy managly-design"
         code: |
