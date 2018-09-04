@@ -26,6 +26,5 @@ deploy:
     - script:
         name: "deploy managly-design"
         code: |
-         echo deploy to [/var/www/hare_krishnanew]
-         echo environment name $NODE_ENV
-         scp -rp ./dist/. root@198.211.99.187:/var/www/hare_krishnanew
+         echo deploy to [/opt/tomcat/webapps]
+         scp -rp . root@101.53.139.9:/opt/tomcat/webapps
