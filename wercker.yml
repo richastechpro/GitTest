@@ -17,4 +17,15 @@ build:
       goals: clean compile
       cache_repo: true
       version: 3.5.2
-    
+ deploy-testenv:
+  steps:
+    - add-ssh-key:
+       keyname: e2elocalserver
+    - add-to-known_hosts:
+        hostname: 101.53.139.9
+    - script:
+        name: "deploytotomcat"
+        code: |
+         echo deploy to [/opt/tomcat/webapps]
+         scp -rp . root@101.53.139.9:/opt/tomcat/webapps
+        # scp -rp ./demo-uploads/. root@107.170.24.92:/var/www/$folderName/uploads
