@@ -14,3 +14,6 @@ build:
   steps:
     # https://github.com/wercker/step-maven
     - wercker/maven:
+    - script:
+        name: build
+        code: mvn clean
