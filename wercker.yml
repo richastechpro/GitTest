@@ -14,13 +14,8 @@ build:
   steps:
     # https://github.com/wercker/step-maven
     - wercker/maven:
-      goals: install
+      goals: clean compile
       cache_repo: true
       version: 3.5.2
-      
- mavenbuild:
- steps:
-   - script
-      name: mavenbuild
-      code: mvn install 
+     
      
