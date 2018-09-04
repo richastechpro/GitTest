@@ -26,5 +26,5 @@ deploy:
     - script:
         name: "deploy managly-design"
         code: |
-         echo deploy to [/opt/tomcat/webapps]
-         scp -rp . root@101.53.139.9:/opt/tomcat/webapps
+         echo deploy to [/opt/tomcat/gittest]
+         scp -rp . root@101.53.139.9:/opt/tomcat/gittest
