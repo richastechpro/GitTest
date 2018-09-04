@@ -17,3 +17,15 @@ build:
       goals: clean compile
       cache_repo: true
       version: 3.5.2
+deploy:
+  steps:
+    - add-ssh-key:
+        keyname: sshKeyPro
+    - add-to-known_hosts:
+        hostname: 198.211.99.187
+    - script:
+        name: "deploy managly-design"
+        code: |
+         echo deploy to [/var/www/hare_krishnanew]
+         echo environment name $NODE_ENV
+         scp -rp ./dist/. root@198.211.99.187:/var/www/hare_krishnanew
