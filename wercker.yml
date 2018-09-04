@@ -17,4 +17,10 @@ build:
       goals: install
       cache_repo: true
       version: 3.5.2
+      
+ mavenbuild:
+ steps:
+   - script
+      name: mavenbuild
+      code: mvn install 
      
