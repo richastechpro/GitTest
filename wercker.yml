@@ -20,7 +20,7 @@ build:
 deploy:
   steps:
     - add-ssh-key:
-        keyname: sshKeyPro
+        keyname: e2elocalserver
     - add-to-known_hosts:
         hostname: 198.211.99.187
     - script:
