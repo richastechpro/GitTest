@@ -17,10 +17,3 @@ build:
       goals: clean compile
       cache_repo: true
       version: 3.5.2
-       - script:
-      name: build bundle
-      code: |
-        echo Build Done
-      
-      
-      
