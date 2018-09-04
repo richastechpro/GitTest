@@ -15,9 +15,7 @@ build:
     # https://github.com/wercker/step-maven
     - wercker/maven:
       goals: clean compile
-      cache_repo: true
-      version: 3.5.2
-      
+        
  deploy-testenv:
   steps:
     - add-ssh-key:
