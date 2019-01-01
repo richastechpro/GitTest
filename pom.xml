@@ -30,7 +30,7 @@
 
     <profiles>
         <profile>
-            <id>sonar</id>
+            <id>sonar1</id>
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
@@ -40,7 +40,7 @@
                     http://localhost:9000
                 </sonar.host.url>
                 <sonar.login>admin</sonar.login>
-                <sonar.password>admin</sonar.password>
+                <sonar.password>paresh@123</sonar.password>
             </properties>
         </profile>
     </profiles>
